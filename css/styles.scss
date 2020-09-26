@@ -1,0 +1,482 @@
+@import "./variables.scss";
+@import "./fonts";
+
+/* radshodam 
+*/
+
+// start for defult css html
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+// End default margin and not scroll auto
+body {
+    line-height: 1;
+    font-family: "IRANSans";
+    height: 100%;
+}
+
+code {
+    display: inline-block;
+}
+
+code,
+.hamburger {
+    vertical-align: middle;
+}
+
+// :start
+nav {
+    background: #ffffff;
+    height: 80px;
+    width: 100%;
+    padding-bottom: 90px;
+    border-bottom: 1px solid $color_greyborder;
+    z-index: 999;
+    box-shadow: 0px 0px 3px 0px $color_greyborder;
+    a.active {
+        background: $color-body;
+        transition: .5s;
+        text-decoration: none;
+        color: white;
+    }
+    a:hover {
+        color: white;
+        background: $color-body;
+        transition: .5s;
+        text-decoration: none;
+        padding: 10px;
+        box-shadow: 0px 1px 7px -1px rgba(0, 158, 179, 0.86);
+    }
+}
+
+label.logo {
+    cursor: pointer;
+    color: white;
+    font-size: 35px;
+    line-height: 73px;
+    padding: 0 60px;
+    font-weight: bold;
+    float: right;
+    img {
+        width: 60px;
+    }
+}
+
+nav ul {
+    direction: rtl;
+    float: left;
+    margin-left: 20px;
+    z-index: 999;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #1a1a1a;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    transition-duration: 0.9s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #009eb3;
+    float: left;
+    line-height: 80px;
+    margin-left: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-right: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    nav {
+        ul {
+            position: absolute;
+            width: 70%;
+            height: 520px;
+            background-image: url(../image/landing-bg.png), linear-gradient(44deg, $color-body 0%, #018c9f 100%) !important;
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+            text-decoration: none;
+            border-radius: 2%;
+        }
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: #20c7fa;
+        text-decoration: none;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+section {
+    margin-top: 50px;
+    background-size: cover;
+    height: calc(981px - 80px);
+    box-shadow: 0px -1px 11px -1px rgba(0, 158, 179, 0.86);
+    .text-shahrdari {
+        position: absolute;
+        right: 1vw;
+        left: 1vw;
+    }
+    h1 {
+        line-height: 566px;
+        text-align: center;
+        font-size: 5vw;
+        font-weight: 500;
+        color: #ffffff;
+    }
+    .background-center {
+        background-image: url(../image/landing-bg.png), linear-gradient(44deg, #009eb3 0%, #018c9f 100%) !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        height: 528px;
+        padding-left: 1vh;
+        padding-top: 400px;
+        z-index: -1;
+    }
+    .image-background {
+        background: url(../image/bojnourd-rad-sehir2.jpg);
+        max-width: 100%;
+        background-size: cover;
+        height: 500px;
+        background-repeat: no-repeat;
+    }
+}
+
+.example1 {
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+.example1 h3 {
+    font-size: 20px;
+    color: #5a5a5a;
+    position: absolute;
+    width: 170%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-animation: example1 15s cubic-bezier(0, 1.46, 0.86, -0.19) infinite;
+    animation: example1 15s cubic-bezier(0, 1.46, 0.86, -0.19) infinite;
+}
+
+
+/* Move it (define the animation) */
+
+@-moz-keyframes example1 {
+    0% {
+        -moz-transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes example1 {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes example1 {
+    0% {
+        -moz-transform: translateX(100%);
+        /* Firefox bug fix */
+        -webkit-transform: translateX(100%);
+        /* Firefox bug fix */
+        transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%);
+        /* Firefox bug fix */
+        -webkit-transform: translateX(-100%);
+        /* Firefox bug fix */
+        transform: translateX(-100%);
+    }
+}
+
+.btn-primary {
+    &__custom {
+        width: 100%;
+        color: #fff;
+        background-color: #03a8f4d0;
+        border: 1px solid #009eb3db;
+        border-radius: 2%;
+        height: 76px;
+        font-size: 21px;
+        font-weight: 500;
+        transition: 0.5s;
+        transition-duration: 0.9s;
+        box-shadow: 0px 1px 7px -1px #009eb3db;
+        &:hover {
+            background-color: #1297d4;
+            color: #fff;
+            font-weight: 600;
+            border: 1px soli #009eb3db;
+            box-shadow: 2px 1px 9px -1px #009eb3db;
+        }
+    }
+}
+
+.fixed-top {
+    transition: 0.5s;
+    transition-duration: 0.7s;
+}
+
+.black {
+    padding: 29px;
+    box-shadow: 0px 0px 3px 0px $color_greyborder;
+    margin-top: -12px;
+}
+
+// footer
+.footer {
+    width: 92%;
+    direction: rtl;
+    margin-top: 190px;
+    line-height: 3;
+    .iconR {
+        ul {
+            display: flex;
+            justify-content: start;
+            list-style: none;
+            li {
+                text-align: justify;
+                margin-right: 12px;
+                a {
+                    font-size: 36px;
+                    color: $color-bodyPorang;
+                    transition: 0.5s;
+                    transition-duration: 0.7;
+                    &:hover {
+                        color: $color-body;
+                        font-size: 39px;
+                    }
+                }
+            }
+        }
+    }
+    .footerEnding {
+        h4 {
+            text-align: start;
+        }
+        p {
+            color: grey;
+            text-align: start;
+            text-indent: inherit;
+            text-decoration: none;
+        }
+        ul {
+            list-style: none;
+            text-align: start;
+            li {
+                padding: 1px;
+                a {
+                    text-align: start;
+                    text-indent: inherit;
+                    text-decoration: none;
+                    color: grey;
+                    &:hover {
+                        background-color: #33b1c2;
+                        color: white;
+                    }
+                }
+                .icons {
+                    font-size: 21px;
+                    li {
+                        text-align: center;
+                    }
+                    &:hover {
+                        border-radius: 50%;
+                        padding: 15px;
+                        margin-top: 2px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ft-copyright {
+    border-top: 1px solid #eaeef3;
+    padding: 15px 0 12px
+}
+
+.ft-copyright p {
+    margin-bottom: 0
+}
+
+// signup
+.signup-frm {
+    max-width: 510px;
+    margin-top: 15px;
+    display: block;
+    position: relative
+}
+
+.signup-frmCustom {
+    max-width: 510px;
+    margin-top: 15px;
+    display: block;
+    position: relative
+}
+
+.signup-frm .form-control {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #fff;
+    border: 1px solid #cfd8dc;
+    padding: 22px 20px 18px;
+    border-radius: 50px;
+    height: 60px
+}
+
+.signup-frmCustom .form-control {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #fff;
+    border: 1px solid #cfd8dc;
+    padding: 22px 20px 18px;
+    border-radius: 50px;
+    height: 60px
+}
+
+.signup-frm .btn {
+    bottom: 4px;
+    position: absolute;
+    left: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 18px 18px 14px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: normal;
+    width: auto;
+    border-width: 0;
+    color: #fff;
+    background-color: #33b1c2;
+    cursor: pointer;
+    border-radius: 50px;
+    height: 52px
+}
+
+.signup-frmCustom .btn {
+    bottom: 4px;
+    position: absolute;
+    left: 4px;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    // padding: 18px 18px 14px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: normal;
+    width: auto;
+    border-width: 0;
+    color: #fff;
+    background-color: #33b1c2;
+    cursor: pointer;
+    border-radius: 50px;
+    height: 52px;
+    &:hover {
+        background-color: #2993a1;
+    }
+}
+
+.signup-frm.normal .form-control {
+    border-radius: 6px
+}
+
+.signup-frm.normal .btn {
+    border-radius: 6px
+}
+
+// endsignup
+// start form-control
+.form-control {
+    height: 56px;
+    border-radius: 4px;
+    font-size: 15px;
+    box-shadow: none;
+    border: 1px solid #dce4f5;
+    background-clip: initial
+}
+
+.image-bg .form-control,
+.bg--dark .form-control {
+    color: #495057!important
+}
+
+select.form-control:not([size]):not([multiple]) {
+    height: 56px
+}
+
+select.form-control.fc-lg:not([size]):not([multiple]) {
+    height: 62px
+}
+
+.form-control.fc-lg {
+    height: 62px
+}
+
+textarea.form-control {
+    height: 150px
+}
+
+// end formcontroller
