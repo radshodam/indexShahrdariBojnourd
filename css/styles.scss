@@ -1,5 +1,6 @@
 @import "./variables.scss";
 @import "./fonts";
+@import "./Radloader";
 
 /* radshodam 
 */
@@ -12,6 +13,8 @@ html {
 }
 
 // End default margin and not scroll auto
+// loader
+// loader end
 body {
     line-height: 1;
     font-family: "IRANSans";

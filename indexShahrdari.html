@@ -20,7 +20,16 @@
 
 <body>
     <!-- radloader hanooz gozashte nashode -->
-
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="image/logo_ssh.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- start nav va fix top baraye scroll -->
 
     <nav class=" px-1 pt-2 fixed-top ">
@@ -192,7 +201,10 @@
     <script src="js/jquery.matchHeight-min.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/bundle.js"></script>
-
+    <!-- startloader -->
+    <script src="js/loader.js">
+    </script>
+    <!-- endloader -->
     <!-- start script hamburger radshodam-->
     <script>
         var forEach = function(t, o, r) {
