@@ -161,7 +161,7 @@ nav ul li a {
     position: absolute;
     width: 70%;
     height: 466px;
-    background-image: url(../image/landing-bg.png), linear-gradient(189deg, #ffffff 0%, #009eb3 100%) !important;
+    background-image: url(../image/landing-bg.png), linear-gradient(189deg, #ffffff 0%, #a5c2c6 100%) !important;
     top: 80px;
     left: -100%;
     text-align: center;
@@ -399,7 +399,12 @@ section .image-background {
 
 .footer .footerEnding ul li a:hover {
   background-color: #33b1c2;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 2px;
   color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .footer .footerEnding ul li .icons {

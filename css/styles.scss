@@ -121,7 +121,7 @@ nav ul li a {
             position: absolute;
             width: 70%;
             height: 466px;
-            background-image: url(../image/landing-bg.png), linear-gradient(189deg, #ffffff 0%, #009eb3 100%) !important;
+            background-image: url(../image/landing-bg.png), linear-gradient(189deg, #ffffff 0%, #a5c2c6 100%) !important;
             top: 80px;
             left: -100%;
             text-align: center;
@@ -185,6 +185,9 @@ section {
         height: 500px;
         background-repeat: no-repeat;
     }
+    // .spanP {
+    //     width: 25%;
+    // }
 }
 
 .example1 {
@@ -341,7 +344,11 @@ section {
                     color: grey;
                     &:hover {
                         background-color: #33b1c2;
+                        font-weight: 500;
+                        border-radius: 5px;
+                        padding: 2px;
                         color: white;
+                        transition: 0.5s;
                     }
                 }
                 .icons {
