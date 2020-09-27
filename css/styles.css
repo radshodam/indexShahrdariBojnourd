@@ -328,6 +328,14 @@ section .image-background {
   background-repeat: no-repeat;
 }
 
+section .image-backgroundsabt {
+  background: url(../image/bojnourd-rad-sehir3.jpg);
+  max-width: 100%;
+  background-size: cover;
+  height: 500px;
+  background-repeat: no-repeat;
+}
+
 .example1 {
   height: 50px;
   overflow: hidden;
@@ -404,6 +412,25 @@ section .image-background {
 
 .btn-primary__custom:hover svg {
   fill: white;
+}
+
+.btn-primary__custom a {
+  color: #1a1a1a;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  -webkit-transition-duration: 0.9s;
+          transition-duration: 0.9s;
+}
+
+.btn-primary__custom a:hover {
+  background: none;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .svg {
@@ -517,6 +544,15 @@ section .image-background {
   margin-top: 2px;
 }
 
+@media (max-width: 575px) {
+  .backCent-margins {
+    position: absolute;
+  }
+  .image-backgroundsabt {
+    height: auto !important;
+  }
+}
+
 .ft-copyright {
   border-top: 1px solid #eaeef3;
   padding: 15px 0 12px;
@@ -605,6 +641,12 @@ section .image-background {
 
 .signup-frmCustom .btn:hover {
   background-color: #2993a1;
+}
+
+.card-view input,
+select,
+textarea {
+  height: 40px !important;
 }
 
 .signup-frm.normal .form-control {

@@ -12,9 +12,6 @@ html {
     margin: 0;
 }
 
-// End default margin and not scroll auto
-// loader
-// loader end
 body {
     line-height: 1;
     font-family: "IRANSans";
@@ -188,6 +185,13 @@ section {
         height: 500px;
         background-repeat: no-repeat;
     }
+    .image-backgroundsabt {
+        background: url(../image/bojnourd-rad-sehir3.jpg);
+        max-width: 100%;
+        background-size: cover;
+        height: 500px;
+        background-repeat: no-repeat;
+    }
     // .spanP {
     //     width: 25%;
     // }
@@ -274,6 +278,22 @@ section {
             box-shadow: 2px 1px 9px -1px #313333db;
             svg {
                 fill: white;
+            }
+        }
+        a {
+            color: #1a1a1a;
+            font-size: 17px;
+            font-weight: 500;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            transition-duration: 0.9s;
+            &:hover {
+                background: none;
+                color: #ffffff;
+                text-decoration: none;
+                font-weight: 600;
+                text-decoration: none;
             }
         }
     }
@@ -370,6 +390,15 @@ section {
     }
 }
 
+@media (max-width: 575px) {
+    .backCent-margins {
+        position: absolute;
+    }
+    .image-backgroundsabt {
+        height: auto !important;
+    }
+}
+
 .ft-copyright {
     border-top: 1px solid #eaeef3;
     padding: 15px 0 12px
@@ -459,6 +488,12 @@ section {
     &:hover {
         background-color: #2993a1;
     }
+}
+
+.card-view input,
+select,
+textarea {
+    height: 40px!important;
 }
 
 .signup-frm.normal .form-control {
