@@ -320,7 +320,7 @@ section .background-center {
   z-index: -1;
 }
 
-section .image-background {
+section .image-background, section .image-background-peigiri {
   background: url(../image/bojnourd-rad-sehir2.jpg);
   max-width: 100%;
   background-size: cover;
@@ -493,34 +493,34 @@ section .image-backgroundsabt {
   font-size: 39px;
 }
 
-.footer .footerEnding h4 {
+.footer .footerEnding h4, .footer .search-peigir h4 {
   text-align: start;
 }
 
-.footer .footerEnding p {
+.footer .footerEnding p, .footer .search-peigir p {
   color: grey;
   text-align: start;
   text-indent: inherit;
   text-decoration: none;
 }
 
-.footer .footerEnding ul {
+.footer .footerEnding ul, .footer .search-peigir ul {
   list-style: none;
   text-align: start;
 }
 
-.footer .footerEnding ul li {
+.footer .footerEnding ul li, .footer .search-peigir ul li {
   padding: 1px;
 }
 
-.footer .footerEnding ul li a {
+.footer .footerEnding ul li a, .footer .search-peigir ul li a {
   text-align: start;
   text-indent: inherit;
   text-decoration: none;
   color: grey;
 }
 
-.footer .footerEnding ul li a:hover {
+.footer .footerEnding ul li a:hover, .footer .search-peigir ul li a:hover {
   background-color: #33b1c2;
   font-weight: 500;
   border-radius: 5px;
@@ -530,15 +530,15 @@ section .image-backgroundsabt {
   transition: 0.5s;
 }
 
-.footer .footerEnding ul li .icons {
+.footer .footerEnding ul li .icons, .footer .search-peigir ul li .icons {
   font-size: 21px;
 }
 
-.footer .footerEnding ul li .icons li {
+.footer .footerEnding ul li .icons li, .footer .search-peigir ul li .icons li {
   text-align: center;
 }
 
-.footer .footerEnding ul li .icons:hover {
+.footer .footerEnding ul li .icons:hover, .footer .search-peigir ul li .icons:hover {
   border-radius: 50%;
   padding: 15px;
   margin-top: 2px;
@@ -565,7 +565,7 @@ section .image-backgroundsabt {
   margin-bottom: 0;
 }
 
-.signup-frm {
+.signup-frm, .search-frm {
   max-width: 510px;
   margin-top: 15px;
   display: block;
@@ -579,7 +579,7 @@ section .image-backgroundsabt {
   position: relative;
 }
 
-.signup-frm .form-control {
+.signup-frm .form-control, .search-frm .form-control {
   width: 100%;
   font-size: 16px;
   font-weight: 400;
@@ -601,7 +601,7 @@ section .image-backgroundsabt {
   height: 60px;
 }
 
-.signup-frm .btn {
+.signup-frm .btn, .search-frm .btn {
   bottom: 4px;
   position: absolute;
   left: 4px;
@@ -652,11 +652,11 @@ textarea {
   height: 40px !important;
 }
 
-.signup-frm.normal .form-control {
+.signup-frm.normal .form-control, .normal.search-frm .form-control {
   border-radius: 6px;
 }
 
-.signup-frm.normal .btn {
+.signup-frm.normal .btn, .normal.search-frm .btn {
   border-radius: 6px;
 }
 
@@ -689,5 +689,28 @@ select.form-control.fc-lg:not([size]):not([multiple]) {
 
 textarea.form-control {
   height: 150px;
+}
+
+.search-frm .btn:hover {
+  color: white;
+  background: #027a8a;
+  -webkit-transition: .5s;
+  transition: .5s;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 1px 7px -1px rgba(0, 158, 179, 0.86);
+          box-shadow: 0px 1px 7px -1px rgba(0, 158, 179, 0.86);
+}
+
+.search-frm .form-control {
+  -webkit-box-shadow: 1px 5px 5px 2px rgba(0, 0, 0, 0.71);
+          box-shadow: 1px 5px 5px 2px rgba(0, 0, 0, 0.71);
+}
+
+.image-background-peigiri {
+  background-image: url(../image/bojnourd-radd.jpg) !important;
+}
+
+.mt-search {
+  margin-top: 50px;
 }
 /*# sourceMappingURL=styles.css.map */
